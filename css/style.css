@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src:  url("../fonts/Roboto-Regular.woff");
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  url("../fonts/Roboto-Bold.woff");
+        font-weight: 700;
+        font-display: swap;
+        font-style: normal;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.buttons svg{
+    margin-bottom: 5px;
+}
+.main-section__image img {
+    width: 100%;
+}
+
+.main-section {
+    position: relative;
+}
+.main-section__description {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.main-section__description h1 {
+    font-weight: 700;
+}
+.restaurants__top-title h1 {
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 992px) {
+    .main-section__description h1 {
+        font-size: 20px;
+    }
+    .main-section__description p {
+        font-size: 12px;
+    }
+    .main-section__description {
+        left: 35%;
+        top: 55%;
+    }
+}
+@media (max-width: 450px) {
+    .main-section__description h1 {
+        font-size: 14px;
+        margin-bottom: 5px;
+        line-height: 15px;
+    }
+    .main-section__description p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
