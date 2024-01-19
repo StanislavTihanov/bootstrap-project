@@ -37,9 +37,84 @@ body {
 .main-section__description h1 {
     font-weight: 700;
 }
-.restaurants__top-title h1 {
+.restaurants__top-title h2 {
     font-weight: 700;
 }
+.restaurants__item-image img {
+    width: 100%;
+}
+.restaurants__item {
+    text-decoration: none;
+    color: #000000;
+    border-radius: 7px;
+}
+.restaurants__item-box-title h3 {
+    font-weight: 700;
+    font-size: 22px;
+}
+.restaurants__item-box-time span {
+    border-radius: 2px;
+    background: #262626;
+    color: #FFFFFF;
+    padding: 1px 8px;
+}
+.restaurants__item-block {
+    border-radius: 7px;
+    background: #FFF;
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    padding: 10px 24px 34px 24px;
+}
+.restaurants__item:hover .restaurants__item-block  {
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(255, 241, 184, 0.2);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(255, 241, 184, 0.2);
+    box-shadow: 0px 7px 8px 0px rgba(255, 241, 184, 0.2);
+}
+.restaurants__item-bottom-stars span {
+    color: #FFC107;
+}
+.restaurants__item-bottom-stars {
+    margin-top: 5px;
+}
+.restaurants__item-bottom-stars span svg {
+    margin-bottom: 7px;
+}
+.restaurants__item-bottom-cost span,
+.restaurants__item-bottom-subtitle h4 {
+    color: #8C8C8C;
+    font-size: 18px;
+    line-height: 32px;
+}
+.footer {
+    padding: 60px 0px;
+}
+.footer__list {
+    padding: 0;
+}
+.footer__list-item ul,li {
+    list-style: none;
+    padding: 0;
+}
+.footer__list-item {
+    padding: 5px;
+}
+.footer__list-item a {
+    text-decoration: none;
+    color: #595959;
+}
+.footer__social a {
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+
+
+
+
+
+
 
 
 
