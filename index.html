@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
     <header class="header container p-2 mb-3">
         <div class="row">
             <div class="col">
@@ -65,7 +64,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image1.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold text-nowrap">Пицца плюс</h3>
@@ -96,7 +95,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image2.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold">Тануки</h3>
@@ -127,7 +126,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image3.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold">FoodBand</h3>
@@ -158,7 +157,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image4.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold text-nowrap">Super-пицца</h3>
@@ -189,7 +188,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image5.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold">Точка еды</h3>
@@ -220,7 +219,7 @@
                         <div class="restaurants__item-image">
                             <img class="w-100" src="images/restaurants-image6.png" alt="restaurants img">
                         </div>
-                        <div class="restaurants__item-block rounded bg-white">
+                        <div class="restaurants__item-block rounded bg-white p-4">
                             <div class="restaurants__item-box row mb-3">
                                 <div class="restaurants__item-box-title col">
                                     <h3 class="fs-5 fw-bold">PizzaBurger</h3>
@@ -321,53 +320,95 @@
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-            <div class="modal-footer__cost col">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <h1 class="modal-title fs-2 fw-bold" id="staticBackdropLabel">Корзина</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-footer__buttons col">
-                <button type="button" class="btn btn-primary">Оформить заказ</button>
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+            <div class="modal-body">
+                <div class="modal-item d-flex justify-content-between mb-4 flex-wrap gap-2">
+                    <h3 class="modal-item__title fs-6">Ролл угорь стандарт</h3>
+                    <div class="modal-item__box d-flex gap-3">
+                        <span class="modal-item__box-cost pe-5">250 ₽</span>
+                        <div class="modal-item__counter">
+                            <span class="modal-item__counter-minus">-</span>
+                            <span class="modal-item__counter-count pe-3 ps-3">1</span>
+                            <span class="modal-item__counter-plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-item d-flex justify-content-between mb-4 flex-wrap gap-2">
+                    <h3 class="modal-item__title fs-6">Ролл угорь стандарт</h3>
+                    <div class="modal-item__box d-flex gap-3">
+                        <span class="modal-item__box-cost pe-5">250 ₽</span>
+                        <div class="modal-item__counter">
+                            <span class="modal-item__counter-minus">-</span>
+                            <span class="modal-item__counter-count pe-3 ps-3">1</span>
+                            <span class="modal-item__counter-plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-item d-flex justify-content-between mb-4 flex-wrap gap-2">
+                    <h3 class="modal-item__title fs-6">Ролл угорь стандарт</h3>
+                    <div class="modal-item__box d-flex gap-3">
+                        <span class="modal-item__box-cost pe-5">250 ₽</span>
+                        <div class="modal-item__counter">
+                            <span class="modal-item__counter-minus">-</span>
+                            <span class="modal-item__counter-count pe-3 ps-3">1</span>
+                            <span class="modal-item__counter-plus">+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-item d-flex justify-content-between mb-4 flex-wrap gap-2">
+                    <h3 class="modal-item__title fs-6">Ролл угорь стандарт</h3>
+                    <div class="modal-item__box d-flex gap-3">
+                        <span class="modal-item__box-cost pe-5">250 ₽</span>
+                        <div class="modal-item__counter">
+                            <span class="modal-item__counter-minus">-</span>
+                            <span class="modal-item__counter-count pe-3 ps-3">1</span>
+                            <span class="modal-item__counter-plus">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer border-0 d-flex justify-content-between">
+                <div class="modal-footer__cost">
+                    <span>1250 ₽</span>
+                </div>
+                <div class="modal-footer__buttons">
+                    <button type="button" class="btn btn-primary">Оформить заказ</button>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Отмена</button>
+                </div>
             </div>
         </div>
-      </div>
     </div>
 </div>
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal-dialog">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Личный кабинет</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="mb-3">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
-      </div>
     </div>
-  </div>
+    <div class="modal-body">
+        <form>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Логин</label>
+            <input type="text" class="form-control" id="recipient-name">
+        </div>
+        <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Пароль</label>
+            <input type="password" class="form-control" id="recipient-name">
+        </div>
+        </form>
+    </div>
+    <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-primary">Войти</button>
+    </div>
+    </div>
+</div>
 </div>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>

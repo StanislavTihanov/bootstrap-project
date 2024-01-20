@@ -28,11 +28,11 @@ a {
 .restaurants__item-box-time span {
     background: #262626;
 }
-.restaurants__item-block {
+.restaurants__item-block,
+.restaurant__item {
     -webkit-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
-    padding: 10px 24px 34px 24px;
 }
 .restaurants__item:hover .restaurants__item-block  {
     -webkit-box-shadow: 0px 7px 8px 0px rgba(255, 241, 184, 0.2);
@@ -46,11 +46,24 @@ a {
 .restaurants__item-bottom-subtitle h4 {
     color: #8C8C8C;
 }
+
 .footer__list-item a {
     color: #595959;
 }
 
-
+.modal-item__counter-minus,
+.modal-item__counter-plus {
+    color: #40A9FF;
+    border: 1px solid #40A9FF;
+    padding: 6px 14px; 
+    cursor: pointer;
+}
+.modal-footer__cost {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #262626;
+    color: #FFFFFF;
+}
 @media (max-width: 992px) {
     .main-section__description h1 {
         font-size: 20px;
